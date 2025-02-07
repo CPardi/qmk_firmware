@@ -68,5 +68,12 @@ mkShell {
     # Prevent the avr-gcc wrapper from picking up host GCC flags
     # like -iframework, which is problematic on Darwin
     unset NIX_CFLAGS_COMPILE_FOR_TARGET
+
+    # Set default keyboard to this one
+    qmk config user.keyboard=handwired/dactyl_cpardi
+    qmk config user.keymap=default
+
+    # Remind user of commands
+    echo 'Use `qmk flash` to flash configuration'
   '';
 }
