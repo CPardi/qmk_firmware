@@ -154,9 +154,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        KC_LCBR, KC_RCBR,                                                                KC_LPRN, KC_RPRN,
 //  				  └────────┴────────┘                                                              └────────┴────────┘
 //                                      ┌─────────┬─────────┬─────────┐  ┌─────────┬─────────┬─────────┐
-                                         KC_1,    KC_2,      KC_3,        KC_A,    KC_B,      KC_C,
+                                         BKDEL,    TO(_COM), _LKEY,       _RENT,    _LSPC,   KC_TAB,
 //                                      └─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┘
-                                                   KC_4,     KC_5,        KC_D,     KC_E
+                                                   KC_TAB,   KC_HOME,     KC_ESC,   QK_REP
 //                                                └─────────┴─────────┘  └─────────┴─────────┘
   	),
 
